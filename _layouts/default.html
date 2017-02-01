@@ -8,6 +8,8 @@
     </div>
     </div>
 
+    {{ site | json }}
+
     {% for page in site.pages %}
         {{ page | json }}
         <br>
