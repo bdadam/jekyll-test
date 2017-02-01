@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head></head>
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assetes/main.scss">
+</head>
 <body>
     <div class="main">
-    <div class="container">
-        {{ content }}
+        <div class="container">
+            <div>
+                <h1>Site content</h1> 
+                {{ content }}
+            </div>
+            <div>
+                <h2>site | json</h2>
+                {{ site | json }}
+            </div>
+            <div>
+                <h2>page in site.pages</h2>
+                {% for page in site.pages %}
+                    {{ page | json }}
+                    <br>
+                {% endfor %}
+            </div>
+        </div>
     </div>
-    </div>
-
-    {{ site | json }}
-
-    {% for page in site.pages %}
-        {{ page | json }}
-        <br>
-    {% endfor %}
-
 </body>
 </html>
