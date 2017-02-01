@@ -1,5 +1,5 @@
 ---
-title: index
+title: b
 layout: default
 ---
-index
+b
