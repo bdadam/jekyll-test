@@ -1,0 +1,1 @@
+[Generated site](https://bdadam.github.io/jekyll-test/)
